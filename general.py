@@ -1,8 +1,7 @@
 import math
 
-n = eval(input('(n) Number of times that the experiment has been made: '))
-n0 = eval(input('(n0) Number of times that the experiment has resulted favorable: '))
-p0 = n0 / n
+n0 = eval(input('(n0) Number of times that an experiment has resulted favorable: '))
+n = eval(input('(n) Number of times that an experiment has been made: '))
 
 p = (n0 + 1) / (n + 2)
 
