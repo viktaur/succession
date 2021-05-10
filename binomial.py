@@ -8,15 +8,14 @@ while True:
     p = (n0 + 1) / (n + 2)
 
     print('The probability that the next experiment results favorable is: ' + str(p) + ' or ' + str("{:.2%}".format(p)))  
+    i = input("Want to try again? [y/n]: ")
     while True:
-        i = input("Want to try again? [y/n]: ")
         if i.lower() == 'y':
             break
         elif i.lower() == 'n':
             break
         else:
-            i = input("ERROR: Please introduce a valid argument: ")
-            continue
+            i = input("ERROR: Please introduce a valid argument [y/n]: ")
     
     if i.lower() == 'y':
         continue

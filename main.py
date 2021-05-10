@@ -8,8 +8,8 @@ while True:
     print("[3] Reviews optimizer")
     print("")
 
+    i = input("")
     while True:
-        i = input("")
         if i == '1':
             import binomial
             break
@@ -20,11 +20,13 @@ while True:
             import reviews
             break
         else:
-            print('Please try again')
+            i = input('Please try again: ')
             
     m = input("Would you like to return to the main menu? [y/n]:" )
-    if m.lower() == 'y':
-        continue
-    if m.lower() == 'n':
-        break
-            
+    while True:
+        if m.lower() == 'y':
+            break
+        elif m.lower() == 'n':
+            exit()
+        else:
+            m = input("Please try again [y/n]: ")
