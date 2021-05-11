@@ -21,7 +21,7 @@ while True:
             break
         else:
             i = input('Please try again: ')
-            
+
     m = input("Would you like to return to the main menu? [y/n]:" )
     while True:
         if m.lower() == 'y':
